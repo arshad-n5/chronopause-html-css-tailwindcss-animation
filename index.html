@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=UnifrakturCook:wght@700&family=Wallpoet&display=swap"
+      rel="stylesheet"
+    />
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-black mx-20">
+    <header id="header" class="mt-3">
+      <nav class="flex justify-around p-3 w-400 ms-20 rounded-full">
+        <div class="flex w-100 gap-2">
+          <div>
+            <img
+              class="w-10 rounded-full"
+              src="./assets/black-art-vector-illustration-watch-face-design_790714-5160.avif"
+              alt=""
+            />
+          </div>
+          <h5 class="text-white text-3xl">Chrono Pause</h5>
+        </div>
+        <div class="mt-1.5">
+          <ul class="text-white list-none flex gap-4">
+            <li>
+              <a href=""><i class="fa-regular fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-regular fa-star"></i>Features</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-regular fa-message"></i>Testimonials</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-circle-info"></i>About</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-phone"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="">
+      <video
+        class="rounded-3xl"
+        id="bg-video"
+        autoplay
+        loop
+        muted
+        src="./assets/background.mp4"
+      ></video>
+      <div id="content" class="mx-50 rounded-full">
+        <h1 class="text-5xl text-white text-center mt-3">
+          “Time waits for no one — unless you wear
+          <span
+            style="
+              font-family: 'UnifrakturCook', cursive;
+              color: green;
+              font-size: larger;
+            "
+            >ChronoPause</span
+          >.”
+        </h1>
+        <h5 class="text-2xl text-white text-center">
+          Freeze time whenever you need a moment to breathe, think, or act.
+          <br />
+          The future of personal control is here.
+        </h5>
+        <div class="text-center mt-5">
+          <a
+            class="text-black text-1xl bg-white p-3 rounded-full font-bold"
+            href=""
+            >Features</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
