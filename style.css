@@ -1,5 +1,5 @@
-*{
-     font-family: 'Funnel Display', sans-serif;
+* {
+  font-family: "Funnel Display", sans-serif;
 }
 
 nav h5 {
@@ -9,8 +9,7 @@ nav a {
   font-weight: bold;
   border-bottom: 2px solid transparent;
   transition: 0.3s;
-  font-family: 'Wallpoet', sans-serif;
-   
+  font-family: "Wallpoet", sans-serif;
 }
 nav a:hover {
   border-bottom: 2px solid white;
@@ -44,7 +43,7 @@ nav {
 #content {
   position: relative;
   z-index: 1;
-  top: 800px;
+  top: 750px;
   height: 195px;
   background: rgba(18, 18, 18, 0.27);
   border-radius: 16px;
@@ -52,4 +51,67 @@ nav {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(18, 18, 18, 0.16);
+}
+.maincontainer {
+  position: relative;
+  width: 450px;
+  height: 320px;
+}
+.thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: yellow;
+  color: white;
+}
+
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    black,
+    green,
+    rgb(30, 43, 2),
+    green,
+    black
+  );
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  animation: gradient 2s linear infinite;
+}
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+@keyframes gradient {
+  0% {
+    background-position:0 0;
+  }
+  100% {
+    background-position:100% 100;
+  } 
 }
