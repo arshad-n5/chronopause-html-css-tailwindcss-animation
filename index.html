@@ -3,16 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title> Pause the World, Live Your Moment</title>
+    <link rel="icon" href="./assets/black-art-vector-illustration-watch-face-design_790714-5160.avif">
     <link rel="stylesheet" href="./style.css" />
+    <!-- animate.css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- aos link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=UnifrakturCook:wght@700&family=Wallpoet&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Funnel+Display:wght@300..800&family=UnifrakturCook:wght@700&display=swap"
       rel="stylesheet"
-    />
     />
     <!-- fontawsome -->
     <link
@@ -27,7 +35,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-black mx-20">
-    <header id="header" class="mt-3">
+    <header id="header" class="">
       <nav class="flex justify-around p-3 w-400 ms-20 rounded-full">
         <div class="flex w-100 gap-2">
           <div>
@@ -42,25 +50,25 @@
         <div class="mt-1.5">
           <ul class="text-white list-none flex gap-4">
             <li>
-              <a href=""><i class="fa-regular fa-house"></i>Home</a>
+              <a href="#header"><i class="fa-regular fa-house"></i>Home</a>
             </li>
             <li>
-              <a href=""><i class="fa-regular fa-star"></i>Features</a>
+              <a href="#features"><i class="fa-regular fa-star"></i>Features</a>
             </li>
             <li>
-              <a href=""><i class="fa-regular fa-message"></i>Testimonials</a>
+              <a href="#Testimonials"><i class="fa-regular fa-message"></i>Testimonials</a>
             </li>
             <li>
-              <a href=""><i class="fa-solid fa-circle-info"></i>About</a>
+              <a href="#aboutus"><i class="fa-solid fa-circle-info"></i>About</a>
             </li>
             <li>
-              <a href=""><i class="fa-solid fa-phone"></i>Contact</a>
+              <a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section id="home" class="">
+    <section id="home" class="" data-aos="zoom-out-down">
       <video
         class="rounded-3xl"
         id="bg-video"
@@ -88,19 +96,34 @@
         <div class="text-center mt-5">
           <a
             class="text-black text-1xl bg-white p-3 rounded-full font-bold"
-            href=""
+            href="#features"
             >Features</a
           >
         </div>
       </div>
     </section>
 
-    <section id="features" class="mt-3 h-[100vh]">
-      <div>
-        <h1 class="text-7xl text-white text-center mt-10">Features</h1>
+    <section id="features" class="mt-20 h-[100vh]">
+      <div
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        <h1
+          id="feature1"
+          class="text-7xl font-bold text-white text-center mt-10 fon"
+        >
+          Features
+        </h1>
       </div>
-      <div class="container1 flex justify-around mx-27 mt-10">
-        <div class="maincontainer">
+      <div class="container1 flex justify-around mx-27 mt-30">
+        <div
+          class="maincontainer"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="thecard">
             <div
               style="
@@ -109,13 +132,25 @@
               "
               class="thefront"
             >
-              <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">
+                Instant Freeze Mode
+              </h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Instant Freeze Mode</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Stop time around you with a simple wrist twist.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="maincontainer">
+        <div
+          class="maincontainer"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div class="thecard">
             <div
               style="
@@ -124,13 +159,25 @@
               "
               class="thefront"
             >
-              <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">
+                Auto Recharge
+              </h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Auto Recharge</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Harnesses cosmic energy — no battery needed!
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="maincontainer">
+        <div
+          class="maincontainer"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="thecard">
             <div
               style="
@@ -139,15 +186,25 @@
               "
               class="thefront"
             >
-               <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">Smart Timer</h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Smart Timer</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Automatically resumes time after 5 minutes to prevent paradoxes.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="container2 flex justify-around mx-27 mt-10">
-        <div class="maincontainer">
+        <div
+          class="maincontainer"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="thecard">
             <div
               style="
@@ -156,13 +213,25 @@
               "
               class="thefront"
             >
-               <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">
+                Quantum Sheild
+              </h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Quantum Sheild</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Protects you from reality distortions while frozen.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="maincontainer">
+        <div
+          class="maincontainer"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div class="thecard">
             <div
               style="
@@ -171,13 +240,24 @@
               "
               class="thefront"
             >
-              <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">Stealth Mode</h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Stealth Mode</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Makes the user invisible to people when time is paused — perfect
+                for sneaking past awkward encounters.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="maincontainer">
+        <div
+          class="maincontainer"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <div class="thecard">
             <div
               style="
@@ -186,12 +266,298 @@
               "
               class="thefront"
             >
-               <h1 class="text-3xl text-center mt-60 font-bold">Time Freeze</h1>
+              <h1 class="text-3xl text-center mt-60 font-bold">
+                Safe Zone Alert
+              </h1>
             </div>
-            <div class="theback">back of card</div>
+            <div class="theback">
+              <h1 class="text-3xl mt-4 font-bold">Safe Zone Alert</h1>
+              <p class="text-2xl mt-9 text-green-600 mx-2">
+                Warns the user if pausing time in a specific location could
+                cause paradoxes or physical instability.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="Testimonials" class="h-[80vh]">
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <h1 id="testimonials" class="text-7xl text-white text-bold text-center">
+          What Our Clients Say
+        </h1>
+      </div>
+
+      <div class="carousel">
+        <div class="group">
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “I finished a 10-hour project in 10 minutes. Life-saver!”
+            </p>
+            <p class="text-1xl text-white text-end">— Alex R., Time Analyst</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Finally, I can pause awkward conversations. Thank you,
+              ChronoPause!”
+            </p>
+            <p class="text-1xl text-white text-end">— Mira K., Student</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Best gift ever. I never miss a deadline now.”
+            </p>
+            <p class="text-1xl text-white text-end">— Dev M., Designer</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Best invention ever! I paused time during my exams to actually
+              think. Got an A+ for the first time!”
+            </p>
+            <p class="text-1xl text-white text-end">— Riya T., Student</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “I use ChronoPause every morning to enjoy my coffee in peace. My
+              boss has no idea!”
+            </p>
+            <p class="text-1xl text-white text-end">
+              — Jordan P., Software Engineer
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Used ChronoPause to pause traffic and cross the road like a
+              boss.”
+            </p>
+            <p class="text-1xl text-white text-end">— Sam R., Daily Commuter</p>
+          </div>
+        </div>
+
+        <div aria-hidden="" class="group">
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “I finished a 10-hour project in 10 minutes. Life-saver!”
+            </p>
+            <p class="text-1xl text-white text-end">— Alex R., Time Analyst</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Finally, I can pause awkward conversations. Thank you,
+              ChronoPause!”
+            </p>
+            <p class="text-1xl text-white text-end">— Mira K., Student</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Best gift ever. I never miss a deadline now.”
+            </p>
+            <p class="text-1xl text-white text-end">— Dev M., Designer</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Best invention ever! I paused time during my exams to actually
+              think. Got an A+ for the first time!”
+            </p>
+            <p class="text-1xl text-white text-end">— Riya T., Student</p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “I use ChronoPause every morning to enjoy my coffee in peace. My
+              boss has no idea!”
+            </p>
+            <p class="text-1xl text-white text-end">
+              — Jordan P., Software Engineer
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="text-yellow-300 text-2xl">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </h1>
+            <p class="text-3xl text-white mt-3">
+              “Used ChronoPause to pause traffic and cross the road like a
+              boss.”
+            </p>
+            <p class="text-1xl text-white text-end">— Sam R., Daily Commuter</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="h-[100vh]">
+      <div data-aos="fade-up" data-aos-duration="3000">
+        <h1 id="about" class="text-7xl text-center">About Us</h1>
+      </div>
+      <div class="flex justify-around">
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          <img class="w-500" src="./assets/tarantual_green_720x.webp" alt="" />
+        </div>
+        <div>
+          <h1 class="text-3xl mt-25 text-white">
+            <span style="color: green; font-size: 50px">T</span>he Story Behind
+            ChronoPause
+          </h1>
+          <p class="mt-3">
+            At ChronoPause, we believe time should serve you — not the other way
+            around. Founded in 2048 by a team of visionary engineers and quantum
+            physicists, we set out to challenge the one rule no one dared to
+            break: the flow of time.
+          </p>
+          <p class="mt-3">
+            Our flagship creation, the ChronoPause Wristwatch, is more than just
+            a piece of technology — it’s a symbol of human ambition, creativity,
+            and the courage to pause in a world that never stops. We designed it
+            for dreamers, doers, and anyone who’s ever said, “If only I had more
+            time.”
+          </p>
+          <p class="mt-3">
+            Every ChronoPause device is powered by QuantumLock™ Technology,
+            built with safety, precision, and style at its core. Our mission is
+            simple —
+          </p>
+          <h2 class="text-2xl text-green-600 mt-3">✨ Our Vision</h2>
+          <p class="mt-3">
+            To make time manipulation technology accessible to everyone —
+            ethically, safely, and stylishly.
+          </p>
+          <h2 class="text-2xl text-green-600 mt-3">⚙️ Our Mission</h2>
+          <p class="mt-3">
+            To empower people to live more, stress less, and make every second
+            count.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="h-[70vh]">
+      <div class="ms-40"data-aos="fade-right">
+        <h2 class="text-2xl text-white">Connect with us</h2>
+        <h1 class="text-7xl text-white">Social Media</h1>
+      </div>
+      <div class="relative" >
+        <div class="absolute top-50 left-30"data-aos="fade-right">
+          <a class="text-white text-8xl" href=""
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="absolute top-20 left-140" data-aos="fade-up">
+          <a class="text-white text-8xl" href=""
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <div class="absolute top-50 left-240"data-aos="fade-down">
+          <a class="text-white text-8xl" href=""
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+        </div>
+        <div class="absolute top-20 left-340"data-aos="fade-left">
+          <a class="text-white text-8xl" href=""
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="end" class="h-[50vh]">
+      <div>
+        <h1 style="color: green;">ChronoPause™</h1>
+        <h1>Pause the world, live your moment.</h1>
+      </div>
+      <div class="flex justify-around">
+        <div>
+          <ul>
+            <li>📍 Quick Links</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1>📧 Contact Us</h1>
+          <h1><a href="">support@chronopause.com</a></h1>
+          <h1>+91 98765 43210</h1>
+          <h1>Quantum Tower, Sector 9, NeoCity, Earth-2048</h1>
+        </div>
+      </div>
+      <div class="mt-30 text-center">
+        <h1 class="text-white">
+          © 2050 ChronoPause Innovations Pvt. Ltd. <br> All Rights Reserved |
+          Designed by Arshad
+        </h1>
+      </div>
+    </footer>
+
+    <div>
+      <a class="goup text-center p-2 font-bold" href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
