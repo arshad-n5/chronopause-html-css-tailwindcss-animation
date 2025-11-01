@@ -190,6 +190,15 @@ nav {
     translate: -100%;
   }
 }
+#social
+{ font-family: "UnifrakturCook", cursive;
+  background: linear-gradient(to right, white, green, white);
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: gradientanimation 3s linear infinite;
+
+}
 
 #about{
   font-family: "UnifrakturCook", cursive;
